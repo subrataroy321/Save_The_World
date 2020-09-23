@@ -210,7 +210,23 @@ const states = [
   },
   {
       "name": "Texas",
-      "abbreviation": "TX"
+      "abbreviation": "TX",
+      "info": "Texas is a land impacted by changing patterns of population, and effects on the natural environment.",
+      "actions": [
+        "Invasive Species Removal",
+        "Litter Abatement",
+        "Waterway Restoration"
+      ],
+      "nonprofits": [
+        {"name":"Keep Texas Beautiful", "website" : "https://www.ktb.org/"},
+        {"name":"Sierra Club of Texas", "website" : "https://www.sierraclub.org/texas"},
+        {"name":"Public Citizen of Texas", "website":"https://www.citizen.org/tags/texas/"}
+      ],
+      "volunteer": [
+        "Great Sweep",
+        "MLK Day of Service",
+        "Great Texas River Cleanup"
+      ]
   },
   {
       "name": "Utah",
