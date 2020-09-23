@@ -16,7 +16,7 @@ function App(props) {
       <h2>States</h2>
       <ul>
         {props.states.map((state, i) => {
-          return <li><Link key={i} to={{pathname: `/${state}`, state: state}}>{state}</Link></li>
+          return <li><Link key={i} to={{pathname: `/${state.name}`, state: state}}>{state.name}</Link></li>
         })}
       </ul>
     </div>
