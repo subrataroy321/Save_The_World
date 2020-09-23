@@ -1,5 +1,4 @@
 .App {
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -8,7 +7,7 @@
 }
 
 .allStatesDiv {
-  width: 800px;
+  width: 950px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
