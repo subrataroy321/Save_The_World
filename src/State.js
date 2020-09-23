@@ -37,6 +37,13 @@ function State(props){
                         : <p>Coming Soon...</p>}
             </ul>
         
+            <h1>Local Initiatives</h1>
+            <ul>
+            {props.location.state.localPrograms 
+                    ? props.location.state.localPrograms.map((program, i) =>{
+                        return <li key={i}><a href = {program.website} target="_blank" rel="noopener noreferrer">{program.name}</a></li>})
+                        : <p>Coming Soon...</p>}
+            </ul>
         </div>
 
     )
