@@ -31,7 +31,7 @@ function App(props) {
           {props.states.map((state, i) => {
             return (
               <Link key={i} to={{pathname: `/${state.name}`, state: state}}>
-                <div className="stateDiv">
+                <div className="stateDiv" style={{ backgroundImage: `url(https://cdn.civil.services/us-states/maps/${state.name.toLowerCase()}-large.png)`}}>
                   {state.name}
                 </div>
               </Link>
