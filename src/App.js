@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import {Link} from 'react-router-dom'
+import './State';
 
 
-const states = ['Texas', 'Colorado', 'Georgia']
 
-function App() {
+function App(props) {
   return (
     <div>
       <header>
@@ -15,8 +15,8 @@ function App() {
       <p>Here to help you help us save the world.</p>
       <h2>States</h2>
       <ul>
-        {states.map((state, i) => {
-          return <li><Link key={i} to={`/${state}`}>{state}</Link></li>
+        {props.states.map((state, i) => {
+          return <li><Link key={i} to={{pathname: `/${state}`, state: state}}>{state}</Link></li>
         })}
       </ul>
     </div>
