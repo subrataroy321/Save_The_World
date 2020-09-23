@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import State from './State';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+const states = ['Texas', 'Colorado', 'Georgia']
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Route exact path= '/' render= {props => (<App states={states}/>)}/>
+    <Route path='/:state' component= {State} />
   </Router>,
   document.getElementById('root')
 );
