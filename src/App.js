@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Link} from 'react-router-dom'
+
+
+const states = ['Texas', 'Colorado', 'Georgia']
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Save the World!</h1>
       </header>
+      <h2>About Us</h2>
+      <p>Here to help you help us save the world.</p>
+      <h2>States</h2>
+      <ul>
+        {states.map((state, i) => {
+          return <li><Link key={i} to={`/${state}`}>{state}</Link></li>
+        })}
+      </ul>
     </div>
   );
 }
