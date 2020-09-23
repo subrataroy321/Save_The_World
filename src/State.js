@@ -8,7 +8,7 @@ function State(props){
         <div>
             <h1>This is our nav bar</h1>
 
-           <h1>{props.location.state}</h1>
+           <h1>{props.location.state.name}</h1>
 
         </div>
 
