@@ -14,7 +14,7 @@ function State(props){
         let instance = M.Carousel.init(elem, {
             //fullWidth: true,
             indicators: true,
-            numVisible: 3,
+            numVisible: 4,
             duration: 1000
             }) 
         instance.next()
@@ -27,35 +27,35 @@ function State(props){
 
         <div className="state-container">
             
-            <div class="col hide-on-small-only m3 l2">
-            <ul class="section table-of-contents">
-                <li><a href="#info">Info</a></li>
-                <li><a href="#actions">Actions</a></li>
-                <li><a href="#donation">Donations</a></li>
-                <li><a href="#volunteer">Volunteer Opportunities</a></li>
-            </ul>
+            <div className="sspy col hide-on-small-only m3 l2">
+                <ul className="section table-of-contents">
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#actions">Actions</a></li>
+                    <li><a href="#donation">Donations</a></li>
+                    <li><a href="#volunteer">Volunteer Opportunities</a></li>
+                </ul>
             </div>
         
-            <div className="state-details">
-                <div className="carousel">
-                    <a className="carousel-item" href="#one!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
-                    <a className="carousel-item" href="#two!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
-                    <a className="carousel-item" href="#three!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
-                    <a className="carousel-item" href="#four!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
-                    <a className="carousel-item" href="#five!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
-                    <a className="carousel-item" href="#six!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
-                </div>
+            <div className="carousel">
+                <a className="carousel-item" href="#one!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
+                <a className="carousel-item" href="#two!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
+                <a className="carousel-item" href="#three!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
+                <a className="carousel-item" href="#four!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
+                <a className="carousel-item" href="#five!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
+                <a className="carousel-item" href="#six!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
+            </div>
             
 
-                <div class="row">
-                    <div class="col s12 m9 l10">
+            <div className="state-details">
+                <div className="row">
+                    <div className="col s12 m9 l10">
 
-                        <div id="info" class="section scrollspy">
+                        <div id="info" className="section scrollspy">
                             <h1>{props.location.state.name}</h1>
                             <p>{props.location.state.info}</p> 
                         </div>
 
-                        <div id="actions" class="section scrollspy">
+                        <div id="actions" className="section scrollspy">
                             <h3>Here are some actions you can take</h3>
                     
                             <ul>
@@ -73,7 +73,7 @@ function State(props){
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>
-                        <div id="donation" class="section scrollspy">
+                        <div id="donation" className="section scrollspy">
                             <h3>Where you can donate</h3>
                         
                             <ul>
@@ -83,7 +83,7 @@ function State(props){
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>
-                        <div id="volunteer" class="section scrollspy">
+                        <div id="volunteer" className="section scrollspy">
                             <h3>Volunteer</h3>
                             
                             <ul>
