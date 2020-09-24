@@ -16,7 +16,7 @@ function State(props){
             }) 
         instance.next()
         const elems = document.querySelectorAll(".scrollspy");
-        M.ScrollSpy.init(elems, { scrollOffset: 0 });
+        M.ScrollSpy.init(elems, { scrollOffset: 250 });
     })
 
   return (
@@ -24,16 +24,16 @@ function State(props){
       <div className="sspy col hide-on-small-only m3 l2">
         <ul className="section table-of-contents">
           <li>
-            <a href="#info">Info</a>
+            <a className="white-text" href="#info">Info</a>
           </li>
           <li>
-            <a href="#actions">Actions</a>
+            <a className="white-text" href="#actions">Actions</a>
           </li>
           <li>
-            <a href="#donation">Donations</a>
+            <a className="white-text" href="#donation">Donations</a>
           </li>
           <li>
-            <a href="#volunteer">Volunteer Opportunities</a>
+            <a className="white-text" href="#volunteer">Volunteer Opportunities</a>
           </li>
         </ul>
       </div>
