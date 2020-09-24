@@ -36,7 +36,6 @@ function State(props){
             </ul>
             </div>
         
-            <div className="state-details">
                 <div className="carousel">
                     <a className="carousel-item" href="#one!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
                     <a className="carousel-item" href="#two!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
@@ -49,6 +48,7 @@ function State(props){
 
                 <div class="row">
                     <div class="col s12 m9 l10">
+                    <div className="state-details">
 
                         <div id="info" class="section scrollspy">
                             <h1>{props.location.state.name}</h1>
