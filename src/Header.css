@@ -24,3 +24,9 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+.navi{
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}

@@ -11,7 +11,7 @@ const Header = (props) => {
   })
 
   return (
-    <header>
+    <header className="navi">
       <div className="logo-image">
         <a href="/">
           <img src={logo} alt="logo" />

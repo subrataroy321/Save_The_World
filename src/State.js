@@ -37,6 +37,16 @@ function State(props){
           </li>
         </ul>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
         <div className="carousel">
           <a className="carousel-item" href="#one!">
             <img
