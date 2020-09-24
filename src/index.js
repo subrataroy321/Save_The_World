@@ -52,11 +52,12 @@ const states = [
     {
       "name": "Colorado",
       "abbreviation": "CO",
-      "info": "Colorado is a land impacted by changing patterns of population, and effects on the natural environment.",
+      "info": "Right now, one issue Colorado is super focused on currently is reducing plastic pollution.\nNothing we used for a few minutes should be allowed to pollute our oceans and rivers and threaten wildlife for centuries to come. That’s why we're calling on state leaders to ban take-out foam cups and containers.",
       "actions": [
-        "Invasive Species Removal",
-        "Litter Abatement",
-        "Waterway Restoration"
+        "Invasive Species Removal: Remove invasive species when you see them! Some invasive species in Colorado are; Freshwater Mussels, Yellow Toadflax, Emerald Ash Borer, and Northern Pike.",
+        "Litter Abatement: If you see trash blowing in the wind, pick it up and throw it in a trash bin!",
+        "Waterway Restoration: Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!",
+        "Go Green: If you can afford it, use green energy! There are tons of programs in Colorado to help families get solar panels on their home. Each little bit makes a difference. "
       ],
       "nonprofits": [
         {"name":"Volunteers for Outdoor Colorado", "website":"https://www.voc.org/"},
