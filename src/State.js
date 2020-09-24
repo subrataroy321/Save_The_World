@@ -12,10 +12,10 @@ function State(props){
         let elem = document.querySelector(".carousel");
         console.log(elem)
         let instance = M.Carousel.init(elem, {
-            fullWidth: true,
+            //fullWidth: true,
             indicators: true,
-            numVisible: 1,
-            duration: 10000
+            numVisible: 3,
+            duration: 1000
             }) 
         instance.next()
         const elems = document.querySelectorAll(".scrollspy");
@@ -25,7 +25,7 @@ function State(props){
 
     return(
 
-        <div>
+        <div className="state-container">
             
             <div class="col hide-on-small-only m3 l2">
             <ul class="section table-of-contents">
@@ -61,7 +61,15 @@ function State(props){
                             <ul>
                                 {props.location.state.actions  
                                     ? props.location.state.actions.map((action, i) =>{
-                                        return <li key={i}>{action}</li>})
+                                        return (
+                                            <li key={i}>
+                                                <h3>{action.name}</h3>
+                                                <p>{action.details}</p>
+                                            </li>
+
+                                            )
+                                        })
+
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>

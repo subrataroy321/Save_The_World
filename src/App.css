@@ -1,7 +1,9 @@
-@import url(https://allfont.net/allfont.css?fonts=prestige-normal);
+@import url(https://allfont.net/allfont.css?fonts=montserrat);
 
 body {
-  font-family: 'Prestige Normal', arial;
+  font-family: 'Montserrat', arial;
+  background-image: url('./assets/bg.jpg');
+  background-size: contain;
 }
 
 body p {
@@ -10,6 +12,14 @@ body p {
 
 .App {
   text-align: center;
+}
+
+.aboutDiv{
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
+    width: 70vw;
+    padding: 20px;
 }
 
 .allStatesDiv {
@@ -23,6 +33,7 @@ body p {
 
 .stateDiv {
   /* background-image: url(./assets/USA-States-Color-Map.jpg); */
+  background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid black;
