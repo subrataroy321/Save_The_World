@@ -17,12 +17,7 @@ function State(props){
         instance.next()
         const elems = document.querySelectorAll(".scrollspy");
         M.ScrollSpy.init(elems, { scrollOffset: 0 });
-
     })
-    instance.next()
-    const elems = document.querySelectorAll(".scrollspy")
-    M.ScrollSpy.init(elems, { scrollOffset: 0 })
-  })
 
   return (
     <div className="state-container">
