@@ -56,14 +56,14 @@ function State(props){
                         </div>
 
                         <div id="actions" class="section scrollspy">
-                            <h1>Here are some actions you can take</h1>
+                            <h3>Here are some actions you can take</h3>
                     
                             <ul>
                                 {props.location.state.actions  
                                     ? props.location.state.actions.map((action, i) =>{
                                         return (
                                             <li key={i}>
-                                                <h3>{action.name}</h3>
+                                                <h4>{action.name}</h4>
                                                 <p>{action.details}</p>
                                             </li>
 
@@ -74,32 +74,32 @@ function State(props){
                             </ul>
                         </div>
                         <div id="donation" class="section scrollspy">
-                            <h1>Where you can donate</h1>
+                            <h3>Where you can donate</h3>
                         
                             <ul>
                             {props.location.state.nonprofits 
                                     ? props.location.state.nonprofits.map((org, i) =>{
-                                        return <li key={i}><a href = {org.website} target="_blank" rel="noopener noreferrer">{org.name}</a></li>})
+                                        return <li key={i}><a href = {org.website} target="_blank" rel="noopener noreferrer"><p>{org.name}</p></a></li>})
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>
                         <div id="volunteer" class="section scrollspy">
-                            <h1>Volunteer</h1>
+                            <h3>Volunteer</h3>
                             
                             <ul>
                             {props.location.state.volunteer 
                                     ? props.location.state.volunteer.map((day, i) =>{
-                                        return <li key={i}>{day}</li>})
+                                        return <li key={i}><p>{day}</p></li>})
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>
 
                         <div>
-                            <h1>Local Initiatives</h1>
+                            <h3>Local Initiatives</h3>
                             <ul>
                             {props.location.state.localPrograms 
                                     ? props.location.state.localPrograms.map((program, i) =>{
-                                        return <li key={i}><a href = {program.website} target="_blank" rel="noopener noreferrer">{program.name}</a></li>})
+                                        return <li key={i}><a href = {program.website} target="_blank" rel="noopener noreferrer"><p>{program.name}</p></a></li>})
                                         : <p>Coming Soon...</p>}
                             </ul>
                         </div>                   
