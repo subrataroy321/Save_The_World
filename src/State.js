@@ -1,14 +1,11 @@
 import React from 'react';
-import './App.css';
-// import {Link} from 'react-router-dom'
+import './State.css';
 
 function State(props){
     console.log(props.location.state.nonprofits)
     return(
-        <div>
-            <h1>This is our nav bar</h1>
-
-           <h1>{props.location.state.name}</h1>
+        <div className="state-details">
+            <h1>{props.location.state.name}</h1>
             <p>{props.location.state.info}</p>
             <h1>Here are some actions you can take</h1>
             
