@@ -95,7 +95,9 @@ function State(props){
                             return <li key={i}><a href = {program.website} target="_blank" rel="noopener noreferrer">{program.name}</a></li>})
                             : <p>Coming Soon...</p>}
                 </ul>
+            
             </div>
+        </div>
 
     )
 }
