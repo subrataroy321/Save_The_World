@@ -7,3 +7,19 @@
 .logo-image img{
     height: 220px;
 }
+
+.dropdown {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.navbar-brand{
+    padding-left: 30px;
+    padding-right: 30px;
+}

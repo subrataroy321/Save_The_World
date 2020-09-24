@@ -36,6 +36,7 @@ function State(props){
             </ul>
             </div>
         
+        <div className="state-details">
             <div className="carousel">
                 <a className="carousel-item" href="#one!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
                 <a className="carousel-item" href="#two!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
@@ -44,6 +45,7 @@ function State(props){
                 <a className="carousel-item" href="#five!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
                 <a className="carousel-item" href="#six!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
             </div>
+        
 
             <div class="row">
                 <div class="col s12 m9 l10">
@@ -99,4 +101,4 @@ function State(props){
 }
 
 
-export default State
+export default State;
