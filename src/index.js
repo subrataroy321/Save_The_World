@@ -5,6 +5,7 @@ import App from './App';
 import State from './State';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Header from './Header'
 
 
 const states = [
@@ -451,6 +452,7 @@ const states = [
 
 ReactDOM.render(
   <Router>
+    <Header/>
     <Route exact path= '/' render= {props => (<App states={states}/>)}/>
     <Route path='/:state' component= {State} />
   </Router>,
