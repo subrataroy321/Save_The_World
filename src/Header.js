@@ -1,32 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Header.css'
 import logo from './assets/logo.png'
 import { Link } from 'react-router-dom'
+import M from "materialize-css"
+
 
 const Header = (props) => {
+
+    useEffect(()=> {
+        let elems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(elems, {inDuration: 300, outDuration: 225});
+    })
+
     return (
         <header>
             <div className="logo-image">
                 <a href="/"><img src={logo} alt="logo"/></a>
             </div>
-            <nav class="navbar navbar-light bg-info">
-                <a class="navbar-brand" href="/">Home</a>
-                <a class="navbar-brand" href="/about">About</a>
-
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Select State
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul id='dropdown1' class='dropdown-content'>
                             {props.states.map((state, i) => {
                                 return (
                                 <Link key={i} to={{pathname: `/${state.name}`, state: state}}>
-                                    <a class="dropdown-item" >{state.name}</a>
+                                    <li>{state.name}</li>
                                 </Link>
                                 )
                             })}
-                        </div>
-                    </div>
+                        </ul>
+            <nav >
+                <div class="nav-wrapper cyan lighten-2">
+                    <ul class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Change State<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
     )

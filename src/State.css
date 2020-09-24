@@ -3,3 +3,18 @@
     width: 80vw;
     text-align: center;
 }
+
+.carousel .carousel-item>img {
+    width: 300%
+}
+.carousel {
+   display: flex;
+   justify-content: center;
+}
+
+.state-container {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 20px;
+    width: 70vw;
+}
