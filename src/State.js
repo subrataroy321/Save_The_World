@@ -18,11 +18,24 @@ function State(props){
             duration: 10000
             }) 
         instance.next()
+        const elems = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(elems, { scrollOffset: 0 });
     })
     
 
     return(
 
+        <div>
+            
+            <div class="col hide-on-small-only m3 l2">
+            <ul class="section table-of-contents">
+                <li><a href="#info">Info</a></li>
+                <li><a href="#actions">Actions</a></li>
+                <li><a href="#donation">Donations</a></li>
+                <li><a href="#volunteer">Volunteer Opportunities</a></li>
+            </ul>
+            </div>
+        
         <div className="state-details">
             <div className="carousel">
                 <a className="carousel-item" href="#one!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
@@ -34,37 +47,47 @@ function State(props){
             </div>
         
 
-            <div >
-      
-                <h1>{props.location.state.name}</h1>
-                <p>{props.location.state.info}</p>
-                <h1>Here are some actions you can take</h1>
+            <div class="row">
+                <div class="col s12 m9 l10">
+
+                    <div id="info" class="section scrollspy">
+                        <h1>{props.location.state.name}</h1>
+                        <p>{props.location.state.info}</p> 
+                    </div>
+
+                    <div id="actions" class="section scrollspy">
+                        <h1>Here are some actions you can take</h1>
                 
-                <ul>
-                    {props.location.state.actions  
-                        ? props.location.state.actions.map((action, i) =>{
-                            return <li key={i}>{action}</li>})
-                            : <p>Coming Soon...</p>}
-                </ul>
-                
-                <h1>Where you can donate</h1>
-                
-                <ul>
-                {props.location.state.nonprofits 
-                        ? props.location.state.nonprofits.map((org, i) =>{
-                            return <li key={i}><a href = {org.website} target="_blank" rel="noopener noreferrer">{org.name}</a></li>})
-                            : <p>Coming Soon...</p>}
-                </ul>
-                
-                <h1>Volunteer</h1>
-                
-                <ul>
-                {props.location.state.volunteer 
-                        ? props.location.state.volunteer.map((day, i) =>{
-                            return <li key={i}>{day}</li>})
-                            : <p>Coming Soon...</p>}
-                </ul>
-            
+                        <ul>
+                            {props.location.state.actions  
+                                ? props.location.state.actions.map((action, i) =>{
+                                    return <li key={i}>{action}</li>})
+                                    : <p>Coming Soon...</p>}
+                        </ul>
+                    </div>
+                    <div id="donation" class="section scrollspy"></div>
+                        <h1>Where you can donate</h1>
+                    
+                        <ul>
+                        {props.location.state.nonprofits 
+                                ? props.location.state.nonprofits.map((org, i) =>{
+                                    return <li key={i}><a href = {org.website} target="_blank" rel="noopener noreferrer">{org.name}</a></li>})
+                                    : <p>Coming Soon...</p>}
+                        </ul>
+                    </div>
+                    <div id="volunteer" class="section scrollspy">
+                        <h1>Volunteer</h1>
+                        
+                        <ul>
+                        {props.location.state.volunteer 
+                                ? props.location.state.volunteer.map((day, i) =>{
+                                    return <li key={i}>{day}</li>})
+                                    : <p>Coming Soon...</p>}
+                        </ul>
+                    </div>
+
+                </div>
+
                 <h1>Local Initiatives</h1>
                 <ul>
                 {props.location.state.localPrograms 
@@ -73,7 +96,6 @@ function State(props){
                             : <p>Coming Soon...</p>}
                 </ul>
             </div>
-        </div>
 
     )
 }
