@@ -1,9 +1,15 @@
-.App {
-  text-align: center;
+@import url(https://allfont.net/allfont.css?fonts=prestige-normal);
+
+body {
+  font-family: 'Prestige Normal', arial;
 }
 
-.logo-image {
-  height: 250px;
+body p {
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
 }
 
 .allStatesDiv {
