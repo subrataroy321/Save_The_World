@@ -1,236 +1,128 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import State from './State';
-import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import Header from './Header'
-import About from './About'
-
+import React from "react"
+import ReactDOM from "react-dom"
+import "./index.css"
+import App from "./App"
+import State from "./State"
+import * as serviceWorker from "./serviceWorker"
+import { BrowserRouter as Router, Route } from "react-router-dom"
+import Header from "./Header"
+import About from "./About"
 
 const states = [
   {
-      "name": "Alabama",
-      "abbreviation": "AL",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/alabama-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alabama.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/alabama.jpg"
+    name: "Alabama",
+    abbreviation: "AL",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/alabama-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alabama.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/alabama.jpg",
   },
   {
-      "name": "Alaska",
-      "abbreviation": "AK",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/alaska-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alaska.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/alaska.jpg",
+    name: "Alaska",
+    abbreviation: "AK",
+    map_image_url: "https://cdn.civil.services/us-states/maps/alaska-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alaska.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/alaska.jpg",
   },
   {
-      "name": "American Samoa",
-      "abbreviation": "AS",
-
+    name: "American Samoa",
+    abbreviation: "AS",
   },
   {
-      "name": "Arizona",
-      "abbreviation": "AZ",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/arizona-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arizona.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/arizona.jpg",
+    name: "Arizona",
+    abbreviation: "AZ",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/arizona-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arizona.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/arizona.jpg",
   },
   {
-      "name": "Arkansas",
-      "abbreviation": "AR",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/arkansas-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arkansas.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/arkansas.jpg",
+    name: "Arkansas",
+    abbreviation: "AR",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/arkansas-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arkansas.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/arkansas.jpg",
   },
   {
-      "name": "California",
-      "abbreviation": "CA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/california-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/california.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/california.jpg"
-
+    name: "California",
+    abbreviation: "CA",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/california-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/california.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/california.jpg",
   },
   {
-    "name": "Colorado",
-    "abbreviation": "CO",
-    "info": "Right now, one issue Colorado is super focused on currently is reducing plastic pollution.\nNothing we used for a few minutes should be allowed to pollute our oceans and rivers and threaten wildlife for centuries to come. That's why we're calling on state leaders to ban take-out foam cups and containers.",
-    "actions": [
-      {"name":"Invasive Species Removal", 
-      "details":"Remove invasive species when you see them! Some invasive species in Colorado are; Freshwater Mussels, Yellow Toadflax, Emerald Ash Borer, and Northern Pike."},
-      {"name":"Litter Abatement",
-      "details": "If you see trash blowing in the wind, pick it up and throw it in a trash bin!"},
-      {"name": "Waterway Restoration", 
-      "details":"Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!"},
-      {"name":"Go Green",
-      "details": "If you can afford it, use green energy! There are tons of programs in Colorado to help families get solar panels on their home. Each little bit makes a difference."}
+    name: "Colorado",
+    abbreviation: "CO",
+    info:
+      "Right now, one issue Colorado is super focused on currently is reducing plastic pollution.\nNothing we used for a few minutes should be allowed to pollute our oceans and rivers and threaten wildlife for centuries to come. That's why we're calling on state leaders to ban take-out foam cups and containers.",
+    actions: [
+      {
+        name: "Invasive Species Removal",
+        details:
+          "Remove invasive species when you see them! Some invasive species in Colorado are; Freshwater Mussels, Yellow Toadflax, Emerald Ash Borer, and Northern Pike.",
+      },
+      {
+        name: "Litter Abatement",
+        details:
+          "If you see trash blowing in the wind, pick it up and throw it in a trash bin!",
+      },
+      {
+        name: "Waterway Restoration",
+        details:
+          "Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!",
+      },
+      {
+        name: "Go Green",
+        details:
+          "If you can afford it, use green energy! There are tons of programs in Colorado to help families get solar panels on their home. Each little bit makes a difference.",
+      },
     ],
-    "nonprofits": [
-      {"name":"Volunteers for Outdoor Colorado", "website":"https://www.voc.org/"},
-      {"name":"Colorado Youth Corps Association", "website":"http://www.cyca.org/"},
-      {"name":"Big City Mountaineers", "website":"https://www.bigcitymountaineers.org/"}
+    nonprofits: [
+      {
+        name: "Volunteers for Outdoor Colorado",
+        website: "https://www.voc.org/",
+      },
+      {
+        name: "Colorado Youth Corps Association",
+        website: "http://www.cyca.org/",
+      },
+      {
+        name: "Big City Mountaineers",
+        website: "https://www.bigcitymountaineers.org/",
+      },
     ],
-    "volunteer": [
+    volunteer: [
       "Great Sweep",
       "MLK Day of Service",
       "Colorado Fourteeners Initiative",
       "Colorado Trail Foundation",
-      "Continental Divide Trail Coalition"
+      "Continental Divide Trail Coalition",
     ],
-    "localPrograms": [
-      {"name" : "Colorado Climate Plan", "website" : "https://www.codot.gov/programs/environmental/Sustainability/colorado-climate-plan-2015"}
+    localPrograms: [
+      {
+        name: "Colorado Climate Plan",
+        website:
+          "https://www.codot.gov/programs/environmental/Sustainability/colorado-climate-plan-2015",
+      },
     ],
-    "map_image_url": "https://cdn.civil.services/us-states/maps/colorado-large.png",
-    "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/colorado.jpg",
-    "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/colorado.jpg",
-  },
-  {
-      "name": "Connecticut",
-      "abbreviation": "CT",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/connecticut-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/connecticut.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/connecticut.jpg"
-
-  },
-  {
-      "name": "Delaware",
-      "abbreviation": "DE",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/delaware-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/delaware.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/delaware.jpg",
-  },
-  {
-      "name": "District Of Columbia",
-      "abbreviation": "DC",
-
-  },
-  {
-      "name": "Federated States Of Micronesia",
-      "abbreviation": "FM"
-  },
-  {
-      "name": "Florida",
-      "abbreviation": "FL",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/florida-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/florida.jpg",
-    "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/florida.jpg",
-  },
-  {
-      "name": "Georgia",
-      "abbreviation": "GA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/georgia-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/georgia.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/georgia.jpg",
-
-  },
-  {
-      "name": "Guam",
-      "abbreviation": "GU"
-  },
-  {
-      "name": "Hawaii",
-      "abbreviation": "HI",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/hawaii-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/hawaii.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/hawaii.jpg",
-  },
-  {
-      "name": "Idaho",
-      "abbreviation": "ID",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/idaho-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/idaho.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/idaho.jpg",
-  },
-  {
-      "name": "Illinois",
-      "abbreviation": "IL",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/illinois-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/illinois.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/illinois.jpg",
-  },
-  {
-      "name": "Indiana",
-      "abbreviation": "IN",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/indiana-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/indiana.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/indiana.jpg",
-  },
-  {
-      "name": "Iowa",
-      "abbreviation": "IA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/iowa-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/iowa.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/iowa.jpg"
-
-  },
-  {
-      "name": "Kansas",
-      "abbreviation": "KS",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/kansas-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/kansas.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/kansas.jpg",
-  },
-  {
-      "name": "Kentucky",
-      "abbreviation": "KY",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/kentucky-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/kentucky.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/kentucky.jpg",
-  },
-  {
-      "name": "Louisiana",
-      "abbreviation": "LA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/louisiana-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/louisiana.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/louisiana.jpg",
-  },
-  {
-      "name": "Maine",
-      "abbreviation": "ME",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/maine-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/maine.jpg",
-    "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/maine.jpg",
-
-  },
-  {
-      "name": "Marshall Islands",
-      "abbreviation": "MH"
-  },
-  {
-      "name": "Maryland",
-      "abbreviation": "MD",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/maryland-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/maryland.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/maryland.jpg",
-  },
-  {
-      "name": "Massachusetts",
-      "abbreviation": "MA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/massachusetts-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/massachusetts.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/massachusetts.jpg",
-  },
-  {
-      "name": "Michigan",
-      "abbreviation": "MI",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/michigan-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/michigan.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/michigan.jpg",
-  },
-  {
-      "name": "Minnesota",
-      "abbreviation": "MN",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/minnesota-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/minnesota.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/minnesota.jpg",
-
-  },
-  {
-      "name": "Mississippi",
-      "abbreviation": "MS",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/mississippi-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/mississippi.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/mississippi.jpg"
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/colorado-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/colorado.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/colorado.jpg",
   },
   {
       "name": "Missouri",
@@ -446,29 +338,19 @@ const states = [
       "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wisconsin.jpg",
       "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/wisconsin.jpg",
   },
-  {
-      "name": "Wyoming",
-      "abbreviation": "WY",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/wyoming-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wyoming.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/wyoming.jpg",
-
-  }
 ]
 
 ReactDOM.render(
   <Router>
     <Header states={states} />
-    <Route exact path= '/' render= {props => (<App states={states}/>)}/>
-    <Route exact path='/about' component={About} />
-    <Route path='/:state' component= {State} />
+    <Route exact path="/" render={(props) => <App states={states} />} />
+    <Route exact path="/about" component={About} />
+    <Route path="/:state" component={State} />
   </Router>,
-  document.getElementById('root')
-);
+  document.getElementById("root")
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
-
-
+serviceWorker.unregister()
