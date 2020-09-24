@@ -125,218 +125,305 @@ const states = [
       "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/colorado.jpg",
   },
   {
-      "name": "Missouri",
-      "abbreviation": "MO",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/missouri-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/missouri.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/missouri.jpg",
+    name: "Missouri",
+    abbreviation: "MO",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/missouri-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/missouri.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/missouri.jpg",
   },
   {
-      "name": "Montana",
-      "abbreviation": "MT",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/montana-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/montana.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/montana.jpg",
+    name: "Montana",
+    abbreviation: "MT",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/montana-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/montana.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/montana.jpg",
   },
   {
-      "name": "Nebraska",
-      "abbreviation": "NE",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/nebraska-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nebraska.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/nebraska.jpg",
+    name: "Nebraska",
+    abbreviation: "NE",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/nebraska-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nebraska.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/nebraska.jpg",
   },
   {
-      "name": "Nevada",
-      "abbreviation": "NV",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/nevada-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nevada.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/nevada.jpg",
+    name: "Nevada",
+    abbreviation: "NV",
+    map_image_url: "https://cdn.civil.services/us-states/maps/nevada-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nevada.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/nevada.jpg",
   },
   {
-      "name": "New Hampshire",
-      "abbreviation": "NH",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/new-hampshire-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-hampshire.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-hampshire.jpg",
+    name: "New Hampshire",
+    abbreviation: "NH",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/new-hampshire-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-hampshire.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-hampshire.jpg",
   },
   {
-      "name": "New Jersey",
-      "abbreviation": "NJ",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/new-jersey-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-jersey.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-jersey.jpg",
+    name: "New Jersey",
+    abbreviation: "NJ",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/new-jersey-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-jersey.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-jersey.jpg",
   },
   {
-      "name": "New Mexico",
-      "abbreviation": "NM",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/new-mexico-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-mexico.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-mexico.jpg",
+    name: "New Mexico",
+    abbreviation: "NM",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/new-mexico-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-mexico.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-mexico.jpg",
   },
   {
-      "name": "New York",
-      "abbreviation": "NY",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/new-york-large.png",
-    "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-york.jpg",
-    "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-york.jpg",
+    name: "New York",
+    abbreviation: "NY",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/new-york-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-york.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/new-york.jpg",
   },
   {
-      "name": "North Carolina",
-      "abbreviation": "NC",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/north-carolina-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-carolina.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/north-carolina.jpg",
-
+    name: "North Carolina",
+    abbreviation: "NC",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/north-carolina-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-carolina.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/north-carolina.jpg",
   },
   {
-      "name": "North Dakota",
-      "abbreviation": "ND",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/north-dakota-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-dakota.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/north-dakota.jpg",
+    name: "North Dakota",
+    abbreviation: "ND",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/north-dakota-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-dakota.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/north-dakota.jpg",
   },
   {
-      "name": "Northern Mariana Islands",
-      "abbreviation": "MP"
+    name: "Northern Mariana Islands",
+    abbreviation: "MP",
   },
   {
-      "name": "Ohio",
-      "abbreviation": "OH",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/ohio-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/ohio.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/ohio.jpg",
-
+    name: "Ohio",
+    abbreviation: "OH",
+    map_image_url: "https://cdn.civil.services/us-states/maps/ohio-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/ohio.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/ohio.jpg",
   },
   {
-      "name": "Oklahoma",
-      "abbreviation": "OK",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/oklahoma-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oklahoma.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/oklahoma.jpg"
-
+    name: "Oklahoma",
+    abbreviation: "OK",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/oklahoma-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oklahoma.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/oklahoma.jpg",
   },
   {
-      "name": "Oregon",
-      "abbreviation": "OR",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/oregon-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oregon.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/oregon.jpg",
+    name: "Oregon",
+    abbreviation: "OR",
+    map_image_url: "https://cdn.civil.services/us-states/maps/oregon-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oregon.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/oregon.jpg",
   },
   {
-      "name": "Palau",
-      "abbreviation": "PW"
+    name: "Palau",
+    abbreviation: "PW",
   },
   {
-      "name": "Pennsylvania",
-      "abbreviation": "PA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/pennsylvania-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/pennsylvania.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/pennsylvania.jpg",
-
+    name: "Pennsylvania",
+    abbreviation: "PA",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/pennsylvania-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/pennsylvania.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/pennsylvania.jpg",
   },
   {
-      "name": "Puerto Rico",
-      "abbreviation": "PR"
+    name: "Puerto Rico",
+    abbreviation: "PR",
   },
   {
-      "name": "Rhode Island",
-      "abbreviation": "RI",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/rhode-island-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/rhode-island.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/rhode-island.jpg",
+    name: "Rhode Island",
+    abbreviation: "RI",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/rhode-island-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/rhode-island.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/rhode-island.jpg",
   },
   {
-      "name": "South Carolina",
-      "abbreviation": "SC",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/south-carolina-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-carolina.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/south-carolina.jpg",
+    name: "South Carolina",
+    abbreviation: "SC",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/south-carolina-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-carolina.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/south-carolina.jpg",
   },
   {
-      "name": "South Dakota",
-      "abbreviation": "SD",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/south-dakota-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-dakota.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/south-dakota.jpg",
+    name: "South Dakota",
+    abbreviation: "SD",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/south-dakota-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-dakota.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/south-dakota.jpg",
   },
   {
-      "name": "Tennessee",
-      "abbreviation": "TN",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/tennessee-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/tennessee.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/tennessee.jpg",
-
+    name: "Tennessee",
+    abbreviation: "TN",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/tennessee-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/tennessee.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/tennessee.jpg",
   },
   {
-      "name": "Texas",
-      "abbreviation": "TX",
-      "info": "Texas is a land impacted by changing patterns of population, and effects on the natural environment.",
-      "actions": [
-        "Invasive Species Removal: Invasive species choke out more drought tolerant plants with deeper roots that provide a buffer against flooding. Some invasive species in Texas are; Ligustrum, English Ivy, Chinese Yam, and Bastard Cabbage.",
-        "Litter Abatement: If you see trash blowing in the wind, pick it up and throw it in a trash bin!",
-        "Waterway Restoration: Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!",
-        "Go Green: Advocate to your local energy provider about providing more alternate energy programs and green choices."
-      ],
-      "nonprofits": [
-        {"name":"Keep Texas Beautiful", "website" : "https://www.ktb.org/"},
-        {"name":"Sierra Club of Texas", "website" : "https://www.sierraclub.org/texas"},
-        {"name":"Public Citizen of Texas", "website":"https://www.citizen.org/tags/texas/"}
-      ],
-      "volunteer": [
-        "Great Sweep",
-        "MLK Day of Service",
-        "Great Texas River Cleanup"
-      ],
-      "map_image_url": "https://cdn.civil.services/us-states/maps/texas-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/texas.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/texas.jpg",
+    name: "Texas",
+    abbreviation: "TX",
+    info:
+      "Texas is a land impacted by changing patterns of population, and effects on the natural environment.",
+    actions: [
+      {
+        name: "Invasive Species Removal",
+        details:
+          "Invasive species choke out more drought tolerant plants with deeper roots that provide a buffer against flooding. Some invasive species in Texas are; Ligustrum, English Ivy, Chinese Yam, and Bastard Cabbage.",
+      },
+      {
+        name: "Litter Abatement",
+        details:
+          " If you see trash blowing in the wind, pick it up and throw it in a trash bin!",
+      },
+      {
+        name: "Waterway Restoration",
+        details:
+          " Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!",
+      },
+      {
+        name: "Go Green",
+        details:
+          " Advocate to your local energy provider about providing more alternate energy programs and green choices.",
+      },
+    ],
+    nonprofits: [
+      { name: "Keep Texas Beautiful", website: "https://www.ktb.org/" },
+      {
+        name: "Sierra Club of Texas",
+        website: "https://www.sierraclub.org/texas",
+      },
+      {
+        name: "Public Citizen of Texas",
+        website: "https://www.citizen.org/tags/texas/",
+      },
+    ],
+    volunteer: [
+      "Great Sweep",
+      "MLK Day of Service",
+      "Great Texas River Cleanup",
+    ],
+    map_image_url: "https://cdn.civil.services/us-states/maps/texas-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/texas.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/texas.jpg",
   },
   {
-      "name": "Utah",
-      "abbreviation": "UT",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/utah-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/utah.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/utah.jpg",
+    name: "Utah",
+    abbreviation: "UT",
+    map_image_url: "https://cdn.civil.services/us-states/maps/utah-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/utah.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/utah.jpg",
   },
   {
-      "name": "Vermont",
-      "abbreviation": "VT",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/vermont-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/vermont.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/vermont.jpg",
+    name: "Vermont",
+    abbreviation: "VT",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/vermont-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/vermont.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/vermont.jpg",
   },
   {
-      "name": "Virgin Islands",
-      "abbreviation": "VI"
+    name: "Virgin Islands",
+    abbreviation: "VI",
   },
   {
-      "name": "Virginia",
-      "abbreviation": "VA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/virginia-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/virginia.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/virginia.jpg",
-
+    name: "Virginia",
+    abbreviation: "VA",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/virginia-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/virginia.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/virginia.jpg",
   },
   {
-      "name": "Washington",
-      "abbreviation": "WA",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/washington-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/washington.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/washington.jpg",
+    name: "Washington",
+    abbreviation: "WA",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/washington-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/washington.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/washington.jpg",
   },
   {
-      "name": "West Virginia",
-      "abbreviation": "WV",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/west-virginia-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/west-virginia.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/west-virginia.jpg",
+    name: "West Virginia",
+    abbreviation: "WV",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/west-virginia-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/west-virginia.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/west-virginia.jpg",
   },
   {
-      "name": "Wisconsin",
-      "abbreviation": "WI",
-      "map_image_url": "https://cdn.civil.services/us-states/maps/wisconsin-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wisconsin.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/wisconsin.jpg",
+    name: "Wisconsin",
+    abbreviation: "WI",
+    map_image_url:
+      "https://cdn.civil.services/us-states/maps/wisconsin-large.png",
+    landscape_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wisconsin.jpg",
+    skyline_background_url:
+      "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/wisconsin.jpg",
   },
 ]
 
