@@ -7,8 +7,9 @@
 }
 
 .carousel .carousel-item>img {
-    width: 300%
+    width: 300%;
 }
+
 .carousel {
     margin: 0 auto;
     width: 50vw;
@@ -21,6 +22,7 @@
     width: 70vw;
 }
 .sspy{
+    width: 100px;
     position: fixed;
     top: 300px;
     left:0;
