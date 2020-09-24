@@ -1,7 +1,10 @@
+
 import React, {useEffect} from 'react'
 import './App.css'
 import M from "materialize-css"
 // import {Link} from 'react-router-dom'
+import './State.css';
+
 
 function State(props){
     console.log(props.location.state.nonprofits)
@@ -19,6 +22,7 @@ function State(props){
     
 
     return(
+
         <div>
             <h1>This is our nav bar</h1>
             <div className="carousel">
@@ -29,6 +33,9 @@ function State(props){
                 <a className="carousel-item" href="#five!"><img src={props.location.state.landscape_background_url} alt="landscape" /></a>
                 <a className="carousel-item" href="#six!"><img src={props.location.state.skyline_background_url} alt="skyline" /></a>
             </div>
+
+        <div className="state-details">
+      
             <h1>{props.location.state.name}</h1>
             <p>{props.location.state.info}</p>
             <h1>Here are some actions you can take</h1>
