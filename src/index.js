@@ -51,34 +51,39 @@ const states = [
       "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/california.jpg"
 
   },
-    {
-      "name": "Colorado",
-      "abbreviation": "CO",
-      "info": "Colorado is a land impacted by changing patterns of population, and effects on the natural environment.",
-      "actions": [
-        "Invasive Species Removal",
-        "Litter Abatement",
-        "Waterway Restoration"
-      ],
-      "nonprofits": [
-        {"name":"Volunteers for Outdoor Colorado", "website":"https://www.voc.org/"},
-        {"name":"Colorado Youth Corps Association", "website":"http://www.cyca.org/"},
-        {"name":"Big City Mountaineers", "website":"https://www.bigcitymountaineers.org/"}
-      ],
-      "volunteer": [
-        "Great Sweep",
-        "MLK Day of Service",
-        "Colorado Fourteeners Initiative",
-        "Colorado Trail Foundation",
-        "Continental Divide Trail Coalition"
-      ],
-      "localPrograms": [
-        {"name" : "Colorado Climate Plan", "website" : "https://www.codot.gov/programs/environmental/Sustainability/colorado-climate-plan-2015"}
-      ],
-      "map_image_url": "https://cdn.civil.services/us-states/maps/colorado-large.png",
-      "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/colorado.jpg",
-      "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/colorado.jpg",
-    },
+  {
+    "name": "Colorado",
+    "abbreviation": "CO",
+    "info": "Right now, one issue Colorado is super focused on currently is reducing plastic pollution.\nNothing we used for a few minutes should be allowed to pollute our oceans and rivers and threaten wildlife for centuries to come. That's why we're calling on state leaders to ban take-out foam cups and containers.",
+    "actions": [
+      {"name":"Invasive Species Removal", 
+      "details":"Remove invasive species when you see them! Some invasive species in Colorado are; Freshwater Mussels, Yellow Toadflax, Emerald Ash Borer, and Northern Pike."},
+      {"name":"Litter Abatement",
+      "details": "If you see trash blowing in the wind, pick it up and throw it in a trash bin!"},
+      {"name": "Waterway Restoration", 
+      "details":"Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!"},
+      {"name":"Go Green",
+      "details": "If you can afford it, use green energy! There are tons of programs in Colorado to help families get solar panels on their home. Each little bit makes a difference."}
+    ],
+    "nonprofits": [
+      {"name":"Volunteers for Outdoor Colorado", "website":"https://www.voc.org/"},
+      {"name":"Colorado Youth Corps Association", "website":"http://www.cyca.org/"},
+      {"name":"Big City Mountaineers", "website":"https://www.bigcitymountaineers.org/"}
+    ],
+    "volunteer": [
+      "Great Sweep",
+      "MLK Day of Service",
+      "Colorado Fourteeners Initiative",
+      "Colorado Trail Foundation",
+      "Continental Divide Trail Coalition"
+    ],
+    "localPrograms": [
+      {"name" : "Colorado Climate Plan", "website" : "https://www.codot.gov/programs/environmental/Sustainability/colorado-climate-plan-2015"}
+    ],
+    "map_image_url": "https://cdn.civil.services/us-states/maps/colorado-large.png",
+    "landscape_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/colorado.jpg",
+    "skyline_background_url": "https://cdn.civil.services/us-states/backgrounds/1280x720/skyline/colorado.jpg",
+  },
   {
       "name": "Connecticut",
       "abbreviation": "CT",
