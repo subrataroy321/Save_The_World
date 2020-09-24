@@ -4,16 +4,20 @@ import M from "materialize-css"
 // import {Link} from 'react-router-dom'
 import "./State.css"
 
-function State(props) {
-  console.log(props.location.state.nonprofits)
-  useEffect(() => {
-    let elem = document.querySelector(".carousel")
-    console.log(elem)
-    let instance = M.Carousel.init(elem, {
-      //fullWidth: true,
-      indicators: true,
-      numVisible: 3,
-      duration: 1000,
+function State(props){
+    console.log(props.location.state.nonprofits)
+    useEffect(() => {
+        let elem = document.querySelector(".carousel");
+        let instance = M.Carousel.init(elem, {
+            //fullWidth: true,
+            indicators: true,
+            numVisible: 4,
+            duration: 1000
+            }) 
+        instance.next()
+        const elems = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(elems, { scrollOffset: 0 });
+
     })
     instance.next()
     const elems = document.querySelectorAll(".scrollspy")
@@ -22,7 +26,7 @@ function State(props) {
 
   return (
     <div className="state-container">
-      <div className="col hide-on-small-only m3 l2">
+      <div className="sspy col hide-on-small-only m3 l2">
         <ul className="section table-of-contents">
           <li>
             <a href="#info">Info</a>
