@@ -380,9 +380,10 @@ const states = [
       "abbreviation": "TX",
       "info": "Texas is a land impacted by changing patterns of population, and effects on the natural environment.",
       "actions": [
-        "Invasive Species Removal",
-        "Litter Abatement",
-        "Waterway Restoration"
+        "Invasive Species Removal: Invasive species choke out more drought tolerant plants with deeper roots that provide a buffer against flooding. Some invasive species in Texas are; Ligustrum, English Ivy, Chinese Yam, and Bastard Cabbage.",
+        "Litter Abatement: If you see trash blowing in the wind, pick it up and throw it in a trash bin!",
+        "Waterway Restoration: Harder to do on your own, but you can always volunteer, and report when you see problems near our waterways!",
+        "Go Green: Advocate to your local energy provider about providing more alternate energy programs and green choices."
       ],
       "nonprofits": [
         {"name":"Keep Texas Beautiful", "website" : "https://www.ktb.org/"},
